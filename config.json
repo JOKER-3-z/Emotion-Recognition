@@ -1,0 +1,26 @@
+{
+    "Yolov8":{
+            "confThreshold":0.7,
+            "nmsThreshold":0.5,
+            "modelpath":"weights/yolov8n-face.onnx"
+            } ,
+    "Arcface":{
+            "modelpath":"weights/Arcface_rs50.pth",
+            "detect_Threshold": 0.5
+            } ,
+    "Dan":{
+            "modelpath":"weights/epochs_18_87.451_DAN.pth",
+            "num_head":4,
+            "num_class":7,
+            "label":["anger", "surprise", "sad", "happy", "neutral", "disgust", "fear", "contempt"],
+
+            "mean":[0.485, 0.456, 0.406],
+            "std":[0.229, 0.224, 0.225],
+            "img_height":224,
+            "img_wide":224
+        } ,
+    "Add_folder":"./ADD_IMAGE",
+    "DEVICE":"cpu",
+    "Stream_Source":0
+
+}
